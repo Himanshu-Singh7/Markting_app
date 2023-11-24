@@ -12,13 +12,12 @@ public class LeadController {
 	
 	@Autowired
 	private LeadService leadService;
-    // Handler method
+        // Handler method
 	//http://localhost:8282/view
 	@RequestMapping("/view")
 	public String viewCreateLeadForm() {
-		
-		System.out.println("This is lead Page");
-		return "create_lead";
+	  System.out.println("This is lead Page");
+	     return "create_lead";
 		
 	}
 	
