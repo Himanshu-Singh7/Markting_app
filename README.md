@@ -1,2 +1,2 @@
 # Markting_app
-Marketing aap using Spring Boot MVC
+Marketing app using Spring Boot MVC
