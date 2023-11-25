@@ -52,8 +52,7 @@
 			<th>Action</th>
 			<th>Update</th>
 		</tr>
-
-		 <tbody>
+                 <tbody>
 			<c:forEach var="lead" items="${leads}">
 				<tr>
 				       <td>${lead.firstName}"</td>
