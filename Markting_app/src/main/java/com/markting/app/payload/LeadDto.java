@@ -1,16 +1,13 @@
 package com.markting.app.payload;
 
+
 public class LeadDto {
 
 	private long id;
-
-	private String firstName;
-
-	private String lastName;
-
+    private String firstName;
+    private String lastName;
 	private String email;
-
-	private long mobile;
+    private long mobile;
 
 	public long getId() {
 		return id;
@@ -52,5 +49,20 @@ public class LeadDto {
 		this.mobile = mobile;
 	}
 
+	public LeadDto(long id, String firstName, String lastName, String email, long mobile) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+		this.mobile = mobile;
+	}
+
+	public LeadDto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	
 }

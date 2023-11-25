@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "lead")
-public class Lead {
+public class Lead  {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,9 +17,10 @@ public class Lead {
 	private String firstName;
 	@Column(name = "last_name", nullable = false, length = 45)
 	private String lastName;
+	
 	@Column(name = "email", nullable = false, length = 128, unique = false)
 	private String email;
-	@Column(name = "mobile", nullable = false, unique = false)
+	@Column(name = "mobile", nullable = false,length = 20, unique = false)
 	private long mobile;
 
 	public long getId() {
@@ -72,14 +73,12 @@ public class Lead {
 	}
 
 	public Lead() {
-		super(); // TODO Auto-generated constructor stub }
-
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "Lead [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
-				+ ", mobile=" + mobile + "]";
-	}
+	
+
+	
 
 }
