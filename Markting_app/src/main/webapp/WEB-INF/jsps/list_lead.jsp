@@ -57,14 +57,12 @@
 		 <tbody>
 			<c:forEach var="lead" items="${leads}">
 				<tr>
-				   
-					<td>${lead.firstName}"</td>
+				       <td>${lead.firstName}"</td>
 					<td>${lead.lastName}"</td>
 					<td>${lead.email}"</td>
 					<td>${lead.mobile}</td>
 					<td><a href ="delete?id=${lead.id}">Delete</a></td>
 					<td><a href ="update?id=${lead.id}">Update</a></td>
-					
 				</tr>
 			</c:forEach>
 		</tbody>
