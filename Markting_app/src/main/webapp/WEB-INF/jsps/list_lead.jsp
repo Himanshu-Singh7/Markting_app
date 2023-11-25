@@ -42,7 +42,7 @@
 
 </head>
 <body>
-	<h1>Lead List</h1>
+      <h1>Lead List</h1>
 	<table class="styled-table">
 		<tr>
 			<th>FirstName</th>
@@ -51,7 +51,6 @@
 			<th>Mobile</th>
 			<th>Action</th>
 			<th>Update</th>
-			
 		</tr>
 
 		 <tbody>
