@@ -63,8 +63,7 @@
     input[type="submit"]:hover {
       background-color: #2980b9;
     }
- 
- </style>
+  </style>
  
 </head>
 <body>
@@ -82,7 +81,6 @@
 		    <input type="submit" value="Save">
 		</form>
     </div>
-    
-    ${msg}
+     ${msg}
 </body>
 </html>
