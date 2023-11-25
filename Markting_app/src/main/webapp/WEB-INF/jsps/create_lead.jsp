@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%> 
+<%@ include file="menu.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +64,8 @@
     input[type="submit"]:hover {
       background-color: #2980b9;
     }
-  </style>
+ 
+ </style>
  
 </head>
 <body>
@@ -71,16 +73,17 @@
     <h1>Create Lead</h1>
         <form action="saveLead" method="post">
 		    <label for="name">First Name:</label>
-		    <input type="text" id="firstName" name="firstName" required>
+		    <input type="text"  name="firstName" >
 		    <label for="name">Last Name:</label>
-		    <input type="text" id="lastName" name="lastName" required>
+		    <input type="text"  name="lastName">
 		    <label for="email">Email:</label>
-		    <input type="text" id="email" name="email" required>
+		    <input type="text" name="email" >
 		    <label for="mobile">Mobile:</label>
-		    <input type="text" id="mobile" name="mobile" required>
+		    <input type="text" name="mobile" >
 		    <input type="submit" value="Save">
 		</form>
     </div>
-     ${msg}
+    
+    ${msg}
 </body>
 </html>

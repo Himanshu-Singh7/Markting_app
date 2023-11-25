@@ -63,22 +63,13 @@ public class Lead  {
 		this.mobile = mobile;
 	}
 
-	public Lead(long id, String firstName, String lastName, String email, long mobile) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
-		this.mobile = mobile;
-	}
+	/*
+	 * public Lead(long id, String firstName, String lastName, String email, long
+	 * mobile) { super(); this.id = id; this.firstName = firstName; this.lastName =
+	 * lastName; this.email = email; this.mobile = mobile; }
+	 * 
+	 * public Lead() { super(); // TODO Auto-generated constructor stub }
+	 */
 
-	public Lead() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	
-
-	
 
 }

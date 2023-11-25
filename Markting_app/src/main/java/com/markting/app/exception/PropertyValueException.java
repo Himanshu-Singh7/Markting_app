@@ -1,6 +1,7 @@
 package com.markting.app.exception;
 
 public class PropertyValueException extends RuntimeException{
+	
 	String entityName;
 	String fieldName;
 	long fieldValue;

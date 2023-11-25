@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ include file="menu.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,15 +64,15 @@
     input[type="submit"]:hover {
       background-color: #2980b9;
     }
- 
- </style>
+  </style>
  
 </head>
 <body>
     <div class="container">
     <h1>Update Lead</h1>
         <form action="updateLead" method="post">
-		    <input type= "text" name = "id" value="${lead.id}"/>
+            <!-- <label for="id">Lead ID:</label> -->
+		    <input type= "hidden" name = "id" value="${lead.id}"/>
 		    <label for="name">First Name:</label>
 		    <input type="text"  name="firstName" value ="${lead.firstName}" >
 		    <label for="name">Last Name:</label>

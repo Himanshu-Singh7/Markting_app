@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="menu.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,7 +43,7 @@
 
 </head>
 <body>
-      <h1>Lead List</h1>
+	<h1>Lead List</h1>
 	<table class="styled-table">
 		<tr>
 			<th>FirstName</th>
@@ -50,17 +51,21 @@
 			<th>Email</th>
 			<th>Mobile</th>
 			<th>Action</th>
-			<th>Update</th>
+			<th>Update</th> 
+			
 		</tr>
-                 <tbody>
+
+		 <tbody>
 			<c:forEach var="lead" items="${leads}">
 				<tr>
-				       <td>${lead.firstName}"</td>
+				   
+					<td>${lead.firstName}"</td>
 					<td>${lead.lastName}"</td>
 					<td>${lead.email}"</td>
 					<td>${lead.mobile}</td>
 					<td><a href ="delete?id=${lead.id}">Delete</a></td>
-					<td><a href ="update?id=${lead.id}">Update</a></td>
+					 <td><a href ="update?id=${lead.id}">Update</a></td> 
+					
 				</tr>
 			</c:forEach>
 		</tbody>

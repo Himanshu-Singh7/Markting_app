@@ -34,7 +34,9 @@ public class LeadServiceImpl implements LeadService {
 
 	@Override
 	public Lead findLead(long id) {
-		   Lead lead = this.leadRepository.findById(id).orElseThrow(() -> new PropertyValueException("Lead", "id", id));
+		   Lead lead = this.leadRepository.findById(id).get();
+				   
+				   //.orElseThrow(() -> new PropertyValueException("Lead", "id", id));
 		   return lead;
 	}
 	
@@ -45,7 +47,7 @@ public class LeadServiceImpl implements LeadService {
 		lead.setFirstName(leadDto.getFirstName());
 		lead.setLastName(leadDto.getLastName());
 		lead.setEmail(leadDto.getEmail());
-		lead.setMobile(lead.getMobile());
+		lead.setMobile(leadDto.getMobile());
 		this.leadRepository.save(lead);
 		
 	}
