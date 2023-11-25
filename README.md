@@ -1,2 +1,2 @@
 # Markting_app
-Marketing app using Spring Boot MVC
+Developing a marketing application involves utilizing Spring Boot for application setup, employing the MVC architecture (Model-View-Controller) to organize code into data representation (Model), user interface (View using JSP), and logic management (Controller), and integrating Hibernate for simplifying database interactions by mapping Java objects to database tables, all in accordance with JPA (Java Persistence API) specifications.
