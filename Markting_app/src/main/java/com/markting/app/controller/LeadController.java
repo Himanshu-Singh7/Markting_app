@@ -13,12 +13,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.markting.app.entity.Lead;
 import com.markting.app.payload.LeadDto;
 import com.markting.app.service.LeadService;
+import com.markting.app.util.EmailService;
 
 @Controller
 public class LeadController {
 
 	@Autowired
 	private LeadService leadService;
+	
+	@Autowired
+	private EmailService emailService;
 
 	// Handler method
 	// http://localhost:8282/view
@@ -67,7 +71,7 @@ public class LeadController {
 		lead.setMobile(leadDto.getMobile());
 		model.addAttribute("msg", "Lead is saved!!");
 		this.leadService.saveLead(lead);
-
+        this.emailService.sendSimpleMessage(leadDto.getEmail(),"Test","Testing email sending");
 		return "create_lead";
 
 	}
