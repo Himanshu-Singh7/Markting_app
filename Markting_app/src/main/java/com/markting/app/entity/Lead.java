@@ -9,8 +9,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "lead")
 public class Lead  {
-
-	@Id
+       @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	@Column(name = "first_name", nullable = false, length = 55)
