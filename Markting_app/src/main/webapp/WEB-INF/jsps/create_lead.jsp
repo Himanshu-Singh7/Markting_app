@@ -76,11 +76,13 @@
 		    <label for="name">Last Name:</label>
 		    <input type="text" id="lastName" name="lastName" required>
 		    <label for="email">Email:</label>
-		    <input type="email" id="email" name="email" required>
+		    <input type="text" id="email" name="email" required>
 		    <label for="mobile">Mobile:</label>
 		    <input type="text" id="mobile" name="mobile" required>
 		    <input type="submit" value="Save">
 		</form>
     </div>
+    
+    ${msg}
 </body>
 </html>

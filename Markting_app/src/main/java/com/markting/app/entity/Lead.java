@@ -17,9 +17,9 @@ public class Lead {
 	private String firstName;
 	@Column(name = "last_name", nullable = false, length = 45)
 	private String lastName;
-	@Column(name = "email", nullable = false, length = 128, unique = true)
+	@Column(name = "email", nullable = false, length = 128, unique = false)
 	private String email;
-	@Column(name = "mobile", nullable = false, unique = true)
+	@Column(name = "mobile", nullable = false, unique = false)
 	private long mobile;
 
 	public long getId() {
